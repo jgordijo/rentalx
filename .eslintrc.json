@@ -21,6 +21,10 @@
         "prettier"
     ],
     "rules": {
+        "quotes": [
+            2,
+            "single"
+        ],
         "camelcase": "off",
         "import/no-unresolved": "error",
         "@typescript-eslint/naming-convention": [
@@ -77,7 +81,12 @@
                 // ]
             }
         ],
-        "prettier/prettier": "error"
+        "prettier/prettier": [
+            "error",
+            {
+                "singleQuote": true
+            }
+        ]
     },
     "settings": {
         "import/resolver": {
