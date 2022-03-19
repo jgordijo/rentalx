@@ -1,71 +1,71 @@
 {
-    "env": {
-      "jest": true,
-      "es2021": true,
-      "node": true
-    },
-    "extends": [
-      "airbnb-base",
-      "prettier",
-      "plugin:prettier/recommended"
+  "env": {
+    "jest": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb-base",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "eslint-plugin-import-helpers",
+    "prettier"
+  ],
+  "rules": {
+    "quotes": [
+      2,
+      "single"
     ],
-    "parserOptions": {
-      "ecmaVersion": 12,
-      "sourceType": "module"
-    },
-    "plugins": [
-      "eslint-plugin-import-helpers",
-      "prettier"
+    "semi": [
+      2,
+      "always"
     ],
-    "rules": {
-      "quotes": [
-        2,
-        "single"
-      ],
-      "semi": [
-        2,
-        "always"
-      ],
-      "camelcase": "off",
-      "import/no-unresolved": "error",
-      "class-methods-use-this": "off",
-      "import/prefer-default-export": "off",
-      "no-shadow": "off",
-      "no-console": "off",
-      "no-useless-constructor": "off",
-      "no-empty-function": "off",
-      "lines-between-class-members": "off",
-      "import/no-dynamic-require": "off",
-      "consistent-return": "off",
-      "global-require": "off",
-      "import-helpers/order-imports": "off",
-      "prefer-destructuring": [
-        "error",
-        {
-          "array": false,
-          "object": true
-        },
-        {
-          "enforceForRenamedProperties": false
+    "camelcase": "off",
+    "import/no-unresolved": "error",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "no-shadow": "off",
+    "no-console": "off",
+    "no-useless-constructor": "off",
+    "no-empty-function": "off",
+    "lines-between-class-members": "off",
+    "import/no-dynamic-require": "off",
+    "consistent-return": "off",
+    "global-require": "off",
+    "import-helpers/order-imports": "off",
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": false,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ],
+    "import/extensions": [
+      "off",
+      {
+        "pattern": {
+          "extension": "never"
         }
-      ],
-      "import/extensions": [
-        "off",
-        {
-          "pattern": {
-            "extension": "never"
-          }
-        }
-      ],
-      "import/no-extraneous-dependencies": [
-        "error"
-      ],
-      "prettier/prettier": [
-        "error",
-        {
-          "singleQuote": true
-        }
-      ]
-    },
-    "settings": {}
-  }
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error"
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true
+      }
+    ]
+  },
+  "settings": {}
+}
